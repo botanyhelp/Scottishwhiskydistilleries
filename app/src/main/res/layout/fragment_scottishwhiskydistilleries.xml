@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Scottishwhiskydistilleries$PlaceholderFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/layout_top">
+
+        <RelativeLayout
+            android:id="@+id/form_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/hello_world"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hello_world"
+                android:textColor="#D3A46E" />
+
+            <Button
+                android:id="@+id/btn_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hello_world"
+                android:onClick="onClickAll"
+                android:text="@string/all" />
+            <Button
+                android:id="@+id/btn_owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_all"
+                android:onClick="onClickOwner"
+                android:text="@string/owner" />
+            <Button
+                android:id="@+id/btn_region"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_owner"
+                android:onClick="onClickRegion"
+                android:text="@string/region" />
+            <Button
+                android:id="@+id/btn_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_region"
+                android:onClick="onClickLocation"
+                android:text="@string/location" />
+            <Button
+                android:id="@+id/btn_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_location"
+                android:onClick="onClickOpen"
+                android:text="@string/open" />
+            <Button
+                android:id="@+id/btn_closed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_open"
+                android:onClick="onClickClosed"
+                android:text="@string/closed" />
+            <Button
+                android:id="@+id/btn_malt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_closed"
+                android:onClick="onClickMalt"
+                android:text="@string/malt" />
+            <Button
+                android:id="@+id/btn_grain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_malt"
+                android:onClick="onClickGrain"
+                android:text="@string/grain" />
+            <Button
+                android:id="@+id/btn_map"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_grain"
+                android:onClick="onClickMap"
+                android:text="@string/map" />
+            <EditText
+                android:id="@+id/txt_distillerysearch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_map"
+                android:hint="@string/searchhint"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/btn_searchfordistilleries"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_distillerysearch"
+                android:onClick="onClickSearch"
+                android:text="@string/searchfordistilleries" />
+            <ImageView
+                android:id="@+id/imagedetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_searchfordistilleries"
+                android:contentDescription="@string/distilleryname"
+                android:scaleType="fitCenter"
+                android:src="@drawable/scottishdistilleries"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/txt_Distilleryname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagedetail"
+                android:layout_gravity="center"
+                android:text="@string/distilleryname"
+                android:textColor="#D4A539"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/txt_Distillerysdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_Distilleryname"
+                android:text="@string/distillerydata"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

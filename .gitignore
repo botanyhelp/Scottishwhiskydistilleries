@@ -1,0 +1,9 @@
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/app/src/main/assets
+/app/src/main/res/drawable
+/app/app-release.apk

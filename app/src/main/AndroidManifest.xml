@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jimsuplee.scottishwhiskydistilleries" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/scottishdistilleries"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Scottishwhiskydistilleries"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Distillery"
+            android:label="Distillery" >
+            <intent-filter>
+                <action android:name="com.jimsuplee.scottishwhiskydistilleries.Distillery" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Owner"
+            android:label="Owner" >
+            <intent-filter>
+                <action android:name="com.jimsuplee.scottishwhiskydistilleries.Owner" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Region"
+            android:label="Region" >
+            <intent-filter>
+                <action android:name="com.jimsuplee.scottishwhiskydistilleries.Region" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Location"
+            android:label="Location" >
+            <intent-filter>
+                <action android:name="com.jimsuplee.scottishwhiskydistilleries.Location" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
